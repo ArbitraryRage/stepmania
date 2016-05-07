@@ -18,6 +18,16 @@
 #include "Style.h"
 #include "ThemeManager.h"
 
+/* Making a change here so I can commit it to a new branch
+ * Gonna be working in this file anyway
+ * The goal here is to be able to rearrange columns and draw order for columns,
+ * which used to be set in GameManager.cpp, but is apparently ignored in newskins
+ * meaning that all that information is wasted now. The positioning and draw orders
+ * should be able to be set in the NewSkins incase different skins use different
+ * spacing for the same game type / style. If no information for positioning or
+ * draw order is found in the NewSkin, it defaults to how it is now.
+ */
+
 using std::max;
 using std::string;
 using std::unordered_set;
